@@ -1,0 +1,50 @@
+name: 投稿一个 AI 助手用法
+description: 分享你亲手跑通过的 AI 助手用法（不想填表就自由发挥）
+title: "[投稿] "
+labels: ["投稿"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        欢迎！这里只收**你亲手跑通过**的用法。讲清楚三件事就行：你遇到了什么问题、怎么用 AI 助手解决的、效果如何。
+  - type: input
+    id: title
+    attributes:
+      label: 一句话标题
+      placeholder: 例：每天自动把 AI 新闻做成 60 秒竖屏视频
+    validations:
+      required: true
+  - type: textarea
+    id: scene
+    attributes:
+      label: 场景
+      description: 你遇到了什么具体问题？痛到什么程度？
+      placeholder: 每天追 AI 新闻太花时间，但又不想错过…
+    validations:
+      required: true
+  - type: textarea
+    id: method
+    attributes:
+      label: 做法
+      description: 用了哪个 AI 助手 + 哪些工具？关键步骤是什么？
+      placeholder: 用 Muse 的定时任务每天早 8:51 收集过去 24 小时新闻…
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 效果
+      description: 真实产出：链接、截图、数据都算
+    validations:
+      required: true
+  - type: textarea
+    id: pitfalls
+    attributes:
+      label: 坑（诚实写，这里最值钱）
+      description: 哪里会翻车？什么情况下不适用？
+  - type: input
+    id: author
+    attributes:
+      label: 署名
+      description: 你的名字/网名，整理成卡片时会用
+      placeholder: 佚名
